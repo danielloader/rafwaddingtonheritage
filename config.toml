@@ -1,5 +1,5 @@
-baseurl = "https://example.org/"
-languageCode = "en-us"
+baseurl = "https://objective-tereshkova-651e9e.netlify.com/"
+languageCode = "en-gb"
 title = "Hugo Creative Theme"
 theme = "creative"
 googleAnalytics = ""
