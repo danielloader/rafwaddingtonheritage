@@ -10,7 +10,9 @@
                     <hr class="light">
                 {{ end }}
                 {{ with .Site.Params.travel.description }}
-                    <p class="text-faded">{{ . | markdownify }}</p>
+                <div class="text-faded">
+                        <p>{{ . | markdownify }}</p>
+                    </div>
                 {{ end }}
                 {{ if .Site.Params.travel.buttonText }}
                     <a href="{{ .Site.Params.travel.buttonLink }}" class="btn btn-default btn-xl page-scroll">{{ .Site.Params.travel.buttonText }}</a>

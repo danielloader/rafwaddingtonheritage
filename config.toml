@@ -45,41 +45,29 @@ googleAnalytics = ""
         subslogan = "Heritage Centre"
         subtitle =  """Welcome to the RAF Waddington Heritage Centre. 
 
-Since 1916, RAF Waddington has hosted a variety of aircraft, including Hamptons, Lancasters, 
-and later the famous Vulcan. We are proud to host displays and exhibits which demonstrate the 
-vital role RAF Waddington has played over the past century. Our guides are happily available 
-to accept bookings for visits and accept groups from all walks of life."""
+Since 1916, RAF Waddington has hosted a variety of aircraft, including Hamptons, Lancasters, and later the famous Vulcan. We are proud to host displays and exhibits which demonstrate the 
+vital role RAF Waddington has played over the past century. Our guides are happily available to accept bookings for visits and accept groups from all walks of life."""
         buttonText = "Find out more"
 
 
     # About section
     [params.about]
         headline    = "History of RAF Waddington"
-        description = """RAF Waddington has been almost continuously active since opening as a Royal Flying Corps 
-training base in 1916 teaching hundreds of pilots to fly a wide variety of aircraft. The Station was put 
-on a care and maintenance basis in 1920 and was enlarged when major RAF expansion began (with many 
-buildings still in use today).
+        description = """RAF Waddington has been almost continuously active since opening as a Royal Flying Corps training base in 1916 teaching hundreds of pilots to fly a wide variety of aircraft. The Station was put 
+on a care and maintenance basis in 1920 and was enlarged when major RAF expansion began (with many buildings still in use today).
 
-The Station re-opened as a bomber base in March 1937, when it operated Blenheims, Hampdens and Avro 
-Manchesters until December 1941 when the first of the Avro Lancasters entered RAF service with 44 squadron 
-at Waddington. It was with this unit that Squadron Leader John Nettleton earned the Victoria Cross in June 
-1942 after leading an attack on a German U-boat engine factory.
+The Station re-opened as a bomber base in March 1937, when it operated Blenheims, Hampdens and Avro Manchesters until December 1941 when the first of the Avro Lancasters entered RAF service with 44 squadron 
+at Waddington. It was with this unit that Squadron Leader John Nettleton earned the Victoria Cross in June 1942 after leading an attack on a German U-boat engine factory.
 
-Post-war Waddington hosted a variety of Lancaster and Avro Lincoln squadrons and later Washingtons, before 
-preparations began for the arrival of the Vulcan bomber. In June 1955 two Canberra squadrons arrived and 
+Post-war Waddington hosted a variety of Lancaster and Avro Lincoln squadrons and later Washingtons, before preparations began for the arrival of the Vulcan bomber. In June 1955 two Canberra squadrons arrived and 
 the first Avro Vulcans arrived in May 1957.
 
-By August 1961, three squadrons of Vulcans were based at the Station and remained there until March 1984 
-with the type’s planned retirement being postponed because of the Falklands conflict. RAF Waddington 
-provided the Vulcans for the Black Buck raids that bombed Port Stanley.  The Vulcans were hastily modified 
-for air-to-air refuelling duties for these raids.
+By August 1961, three squadrons of Vulcans were based at the Station and remained there until March 1984 with the type’s planned retirement being postponed because of the Falklands conflict. RAF Waddington 
+provided the Vulcans for the Black Buck raids that bombed Port Stanley.  The Vulcans were hastily modified for air-to-air refuelling duties for these raids.
 
-Today, Waddington is one of the RAF’s busiest operational airfields and its squadrons and personnel are 
-involved in supporting operations all around the world. Despite the demanding operational tempo, the 
-Station continues to maintain a high profile and has delivered record-breaking Air Shows for 20 years.
-The Station celebrated its centenary in 2016. A series of events marked the occasion, including the 
-unveiling of a sculpture depicting the aircraft of its past and present. The Station also exercised the 
-Freedom of Lincoln alongside RAF Scampton."""
+Today, Waddington is one of the RAF’s busiest operational airfields and its squadrons and personnel are involved in supporting operations all around the world. Despite the demanding operational tempo, the 
+Station continues to maintain a high profile and has delivered record-breaking Air Shows for 20 years. The Station celebrated its centenary in 2016. A series of events marked the occasion, including the 
+unveiling of a sculpture depicting the aircraft of its past and present. The Station also exercised the Freedom of Lincoln alongside RAF Scampton."""
         buttonText  = "Book a Tour!"
 
     # Travel section
@@ -124,3 +112,6 @@ After passing through the guarded entrance please proceed to the area marked on 
             url = "../img/aviationheritage.jpg"
             description = "Aviation Heritage Lincolnshire"
 
+        [[params.footer.list]]
+            url = "../img/westlindsey.png"
+            description = "West Lindsey District Council"
