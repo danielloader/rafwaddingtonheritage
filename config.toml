@@ -1,6 +1,6 @@
-baseurl = "https://objective-tereshkova-651e9e.netlify.com/"
+baseurl = "https://danielloader.github.io/"
 languageCode = "en-gb"
-title = "Hugo Creative Theme"
+title = "RAF Waddington Heritage Centre"
 theme = "creative"
 googleAnalytics = ""
 
@@ -41,7 +41,7 @@ googleAnalytics = ""
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Your awesome slogan"
+		slogan     = "RAF Waddington Heritage Centre"
 		subtitle   = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
 		buttonText = "Find out more"
 
