@@ -1,0 +1,20 @@
+{{ "<!-- FOOTER -->" | safeHTML }}
+<section id="footer">
+    <div class="container">
+        <div class="row">
+            {{ range .Site.Params.footer.list }}
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <img src="{{ .url }}" alt="{{ .description }}">
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 text-center">
+                <h4><a id="privacylink" href="#privacy">Privacy Statement</a></h4>
+            </div>
+            <div class="col-lg-6 col-md-12 text-center"><h4>© RAF Waddington 2018</h4></div>
+        </div>
+    </div>
+</section>

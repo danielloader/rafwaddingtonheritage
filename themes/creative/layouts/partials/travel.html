@@ -1,0 +1,21 @@
+{{ "<!-- TRAVEL -->" | safeHTML }}
+<section class="bg-primary" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .Site.Params.travel.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.travel.headline .Site.Params.about.description }}
+                    <hr class="light">
+                {{ end }}
+                {{ with .Site.Params.travel.description }}
+                    <p class="text-faded">{{ . | markdownify }}</p>
+                {{ end }}
+                {{ if .Site.Params.travel.buttonText }}
+                    <a href="{{ .Site.Params.travel.buttonLink }}" class="btn btn-default btn-xl page-scroll">{{ .Site.Params.travel.buttonText }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

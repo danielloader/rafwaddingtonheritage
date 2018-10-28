@@ -36,8 +36,20 @@
             {{ partial "modals.html" . }}
         {{ end }}
 
+        {{ if .Site.Params.travel }}
+            {{ partial "travel.html" . }}
+        {{ end }}
+
         {{ if .Site.Params.location }}
             {{ partial "location.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.footer.list }}
+            {{ partial "footer.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.footer.privacy }}
+            {{ partial "privacy.html" . }}
         {{ end }}
 
         {{ partial "js.html" . }}
