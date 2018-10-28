@@ -7,9 +7,44 @@
 <script src="{{ "js/jquery.fittext.js" | absURL }}"></script>
 <script src="{{ "js/wow.min.js" | absURL }}"></script>
 {{ if .Site.Params.location }}
-<script src="//maps.googleapis.com/maps/api/js?key={{ .Site.Params.location.maps_api_key }}&v=3.exp"></script>
-<script src="{{ "js/hpneo.gmaps.js" | absURL }}"></script>
-<script src="{{ "js/gmaps.init.js" | absURL }}"></script>
+{{ "<!-- leafletjs JS -->" | safeHTML }}
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script>
+    var map = L.map('map',{scrollWheelZoom:false}).setView([{{ .Site.Params.location.latitude }}, {{ .Site.Params.location.longitude }}], {{ .Site.Params.location.zoom }});
+    
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    
+    L.marker([{{ .Site.Params.location.latitude }}, {{ .Site.Params.location.longitude }}]).addTo(map)
+        .bindPopup('{{ .Site.Params.location.description }}')
+        .openPopup();
+
+    </script>
 {{ end }}
 {{ "<!-- Custom Theme JavaScript -->" | safeHTML }}
 <script src="{{ "js/creative.js" | absURL }}"></script>
+{{ if .Site.Params.contact }}
+    <script>
+        $(function(){
+            $(".ajaxForm").submit(function(e){
+                e.preventDefault();
+                var href = $(this).attr("action");
+                $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    url: href,
+                    data: $(this).serialize(),
+                    success: function(response){
+                        if(response.status == "success"){
+                            alert("We received your submission, thank you!");
+                        }else{
+                            alert("An error occured: " + response.message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+{{ end }}
