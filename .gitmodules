@@ -1,6 +1,3 @@
-[submodule "themes/creative"]
-	path = themes/creative
-	url = https://github.com/digitalcraftsman/hugo-creative-theme.git
 [submodule "public"]
 	path = public
 	url = git@github.com:danielloader/danielloader.github.io.git
